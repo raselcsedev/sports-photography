@@ -1,0 +1,20 @@
+[
+    {
+        "id": 1,
+        "name": "fast zoom lens",
+        "description": "Apart from the fact that the distance between the action and the photographer constantly changes, venue lighting can also sometimes be very poor. As such, I always suggest the use of a fast zoom lens for the versatility and the ability to shoot in low light, while still retaining decent shutter speeds.",
+        "img": "https://petapixel.com/assets/uploads/2018/12/image6.jpg"
+    },
+    {
+        "id": 2,
+        "name": "interactions",
+        "description": "Visuals of celebration, disappointment, and interactions are key moments in sport that often tell a story.When covering assignments make it a point to turn up for warm ups and stay till after the victory ceremony. That way you get to capture the expressions of people before, during and after the event.",
+        "img": "https://petapixel.com/assets/uploads/2018/12/image10.jpg"
+    },
+    {
+        "id": 3,
+        "name": "a crop sensor",
+        "description": "As a start, I would always recommend the 70-200mm f2.8. This lens is light, available across all major lens makers and is relatively inexpensive. An aperture of 2.8 is great for low light situations, and if you need the extra reach, you can just pop on a 1.4x teleconverter or just shoot with a crop sensor.",
+        "img": "https://petapixel.com/assets/uploads/2018/12/image12.jpg"
+    }
+]

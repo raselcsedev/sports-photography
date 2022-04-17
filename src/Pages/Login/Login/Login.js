@@ -24,8 +24,8 @@ const Login = () => {
     if (loading) {
         return <Loading></Loading>
     }
-    if (user) {
-        navigate(from, { replace: true });
+    if(user){
+        navigate(from, {replace:true});
     }
 
     const handleSubmit = e => {

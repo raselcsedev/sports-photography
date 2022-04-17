@@ -1,21 +1,20 @@
 import React from 'react';
-import { useNavigate } from 'react-router-dom';
+import { Link } from 'react-router-dom';
 
 const Album = ({album}) => {
-    const {id, name, img, description} = album;
+    const {name, img, description} = album;
 
-    const navigate = useNavigate();
 
-    const navigateToServiceDetail = id =>{
-        navigate(`/album/${id}`)
-    }
     return (
         <div className='album'>
             <img className='w-100' src={img} alt="" />
-            <h2>{name}</h2>
+            <h2 className='w-100 text-center'>{name}</h2>
             <p><small>{description}</small></p>
             <div className='w-100 text-center'>
-            <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-success px-5'>Details</button>
+            <Link to='/checkout' >
+                <button className='btn btn-success '>Proceed CheckOut</button>
+            </Link>
+            {/* <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-success px-5'>Details</button> */}
             </div>
         </div>
     );

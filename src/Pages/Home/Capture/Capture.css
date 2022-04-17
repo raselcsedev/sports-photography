@@ -1,7 +1,8 @@
-.album{
-    border: 1px solid lightgray;
-    border-radius: 10px;
+.capture{
     padding-bottom: 10px;
     text-align: center;
+    height: 250px;
+}
+.capture img{
     height: 250px;
 }
