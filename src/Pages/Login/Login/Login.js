@@ -4,6 +4,10 @@ import { Link, useNavigate, useLocation } from 'react-router-dom';
 import { useSignInWithEmailAndPassword, useSendPasswordResetEmail } from 'react-firebase-hooks/auth';
 import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
+import Loading from '../../Shared/Loading/Loading';
+import { ToastContainer, toast } from 'react-toastify';
+import 'react-toastify/dist/ReactToastify.css';
+
 
 
 const Login = () => {
@@ -13,15 +17,16 @@ const Login = () => {
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
 
-    const [signInWithEmailAndPassword, user] = useSignInWithEmailAndPassword(auth);
+    const [signInWithEmailAndPassword, user, loading] = useSignInWithEmailAndPassword(auth);
 
     const [sendPasswordResetEmail] = useSendPasswordResetEmail(auth);
 
-    if (user) {
-        navigate(from, {replace : true} );
+    if (loading) {
+        return <Loading></Loading>
     }
-
-
+    if (user) {
+        navigate(from, { replace: true });
+    }
 
     const handleSubmit = e => {
         e.preventDefault();
@@ -34,10 +39,14 @@ const Login = () => {
         navigate('/register');
     }
 
-    const passwordReset =async() =>{
+    const passwordReset = async () => {
         const email = emailRef.current.value;
-        await sendPasswordResetEmail(email);
-        alert('sent email')
+        if (email) {
+            await sendPasswordResetEmail(email);
+            toast('sent email');
+        }else{
+            toast('please enter your email');
+        }
     }
 
     return (
@@ -61,7 +70,7 @@ const Login = () => {
             <p>Create a new account? <Link to="/register" className='text-primary pe-auto text-decoration-none' onClick={navigateRegister}>Please Register</Link> </p>
             <p>Forgot Password? <button className='btn btn-link text-primary ps-0 pt-0  text-decoration-none' onClick={passwordReset} >Reset Password</button> </p>
             <SocialLogin></SocialLogin>
-
+            <ToastContainer />
 
         </div>
     );

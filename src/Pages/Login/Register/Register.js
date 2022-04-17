@@ -1,19 +1,23 @@
-import React, { useRef, useState } from 'react';
+import React from 'react';
 import { Button, Form } from 'react-bootstrap';
-import { useCreateUserWithEmailAndPassword, useUpdateProfile } from 'react-firebase-hooks/auth';
+import { useCreateUserWithEmailAndPassword } from 'react-firebase-hooks/auth';
 import { Link, useLocation, useNavigate } from 'react-router-dom';
-import { ToastContainer, toast } from 'react-toastify';
 import auth from '../../../firebase.init';
+import Loading from '../../Shared/Loading/Loading';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
-    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user, loading] = useCreateUserWithEmailAndPassword(auth);
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
 
     const navigate = useNavigate();
     const navigateLogin = () => {
         navigate('/login');
+    }
+
+    if(loading){
+        return <Loading></Loading>
     }
     if (user) {
         navigate(from, { replace: true });
