@@ -7,40 +7,43 @@ import auth from '../../../firebase.init';
 import SocialLogin from '../SocialLogin/SocialLogin';
 
 const Register = () => {
-    const [agree, setAgree] = useState(false);
-    const [createUserWithEmailAndPassword, user, loading, error] = useCreateUserWithEmailAndPassword(auth);
+    const [createUserWithEmailAndPassword, user] = useCreateUserWithEmailAndPassword(auth);
     const location = useLocation();
     let from = location.state?.from?.pathname || '/';
 
     const navigate = useNavigate();
-    const navigateLogin = () =>{
+    const navigateLogin = () => {
         navigate('/login');
     }
-    if(user){
-        navigate(from, {replace : true} );
+    if (user) {
+        navigate(from, { replace: true });
     }
-    const handleRegister = event =>{
+    const handleRegister = event => {
         event.preventDefault();
-        // const name = e.target.name.value;
+        const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(email, password);
-        
+        createUserWithEmailAndPassword(name, email, password);
+
 
     }
-   
+
     return (
         <div className='container w-50 mx-auto'>
             <h2 className='text-success text-center mt-2'>Please Register</h2>
 
             <Form onSubmit={handleRegister}>
+                <Form.Group className="mb-3" controlId="formBasicName">
+                    <Form.Control type="name" name='name' placeholder="Enter your name" required />
+                </Form.Group>
+
                 <Form.Group className="mb-3" controlId="formBasicEmail">
-                    <Form.Control type="email" name='email' placeholder="Enter email" required />
+                    <Form.Control type="email" name='email' placeholder="Enter your email" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicPassword">
-                    <Form.Control type="password" name='password' placeholder="Password" required />
+                    <Form.Control type="password" name='password' placeholder="Enter password" required />
                 </Form.Group>
 
                 <Button variant="success w-50 mx-auto d-block mb-2 " type="submit">
