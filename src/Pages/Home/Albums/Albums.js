@@ -1,5 +1,4 @@
 import React, { useEffect, useState } from 'react';
-import Footer from '../../Shared/Footer/Footer';
 import Album from '../Album/Album';
 import './Albums.css'
 
@@ -13,7 +12,7 @@ const Albums = () => {
     return (
         <div id='albums' className='container'>
             <div className="row">
-            <h3 className='text-success text-center mt-5'> UNIQUE CAPTURES</h3>
+            <h3 className='text-success text-center mt-5'> FEATURE OF CAPTURING</h3>
             <div className="albums-container">
             {
                 albums.map(album => <Album

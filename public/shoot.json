@@ -1,37 +1,37 @@
 [
     {
         "id": 1,
-        "name": "Fast zoom lens",
+        "name": "Fast zoom lens Photography",
         "description": "Apart from the fact that the distance between the action and the photographer constantly changes, venue lighting can also sometimes be very poor. As such, I always suggest the use of a fast zoom lens for the versatility and the ability to shoot in low light, while still retaining decent shutter speeds.",
         "img": "https://petapixel.com/assets/uploads/2018/12/image6.jpg"
     },
     {
         "id": 2,
-        "name": "Interactions",
+        "name": "Interaction Moment Photography",
         "description": "Visuals of celebration, disappointment, and interactions are key moments in sport that often tell a story.When covering assignments make it a point to turn up for warm ups and stay till after the victory ceremony. That way you get to capture the expressions of people before, during and after the event.",
         "img": "https://petapixel.com/assets/uploads/2018/12/image10.jpg"
     },
     {
         "id": 3,
-        "name": "A crop sensor",
+        "name": "Crop Sensor Light Photography",
         "description": "As a start, I would always recommend the 70-200mm f2.8. This lens is light, available across all major lens makers and is relatively inexpensive. An aperture of 2.8 is great for low light situations, and if you need the extra reach, you can just pop on a 1.4x teleconverter or just shoot with a crop sensor.",
         "img": "https://petapixel.com/assets/uploads/2018/12/image12.jpg"
     },
     {
         "id": 4,
-        "name": "Olympic Skateboard",
+        "name": "Long Shot or Wide Shot Photography",
         "description": "Olympic skateboarding will take two different disciplines in Tokyo and while they may look similar, they require two different sets of skills.",
         "img": "https://static.wixstatic.com/media/84770f_d27dfd1a1116f0780e1e8d8ba324c3aa.jpg/v1/fill/w_663,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_d27dfd1a1116f0780e1e8d8ba324c3aa.jpg"
     },
     {
         "id": 5,
-        "name": "Olympic Swimming",
+        "name": "Point of View Shot Photography",
         "description": "Discover the history of Olympic swimming, from its early days as a military training technique to a showpiece Olympic event.",
         "img": "https://static.wixstatic.com/media/84770f_696d2cffda0d3ddbc22795f576245ceb.jpg/v1/fill/w_663,h_442,al_c,lg_1,q_80,enc_auto/84770f_696d2cffda0d3ddbc22795f576245ceb.jpg"
     },
     {
         "id": 6,
-        "name": "Shooting Sports",
+        "name": "Medium Close Up Shot Photography",
         "description": "Shooting sports is a group of competitive and recreational sporting activities involving proficiency tests of accuracy, precision and speed in shooting",
         "img": "https://static.wixstatic.com/media/84770f_5770f70f3a592ede246fc1841a72f333.jpg/v1/fill/w_663,h_443,al_c,q_80,usm_0.66_1.00_0.01,enc_auto/84770f_5770f70f3a592ede246fc1841a72f333.jpg"
     }
