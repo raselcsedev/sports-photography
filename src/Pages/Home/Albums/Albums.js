@@ -12,7 +12,7 @@ const Albums = () => {
     return (
         <div id='albums' className='container'>
             <div className="row">
-            <h3 className='text-primary text-center mt-5'> Simple Tips for Getting Started in Sports Photography</h3>
+            <h3 className='text-success text-center mt-5'> UNIQUE CAPTURES</h3>
             <div className="albums-container">
             {
                 albums.map(album => <Album
