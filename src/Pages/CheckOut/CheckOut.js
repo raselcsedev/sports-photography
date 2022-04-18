@@ -29,16 +29,22 @@ const CheckOut = () => {
     return (
         <div id='checkout' className='container'>
             <div className="row">
-            <p className='mt-4 '>I cannot stress this enough: never force customers to create an account or register prior to completing checkout. This creates an added step (or steps) for customers, slows them down, and ultimately causes them to reconsider whether they want to proceed. Always offer guest checkout options so that customers are not slowed down, and have the option to proceed by just providing their email address.</p>
-            <div className="checkout-container">
-            {
-                pictures.map(picture => <PictureDetail
-                    key={picture.id}
-                    picture={picture}
-                >
-                </PictureDetail>)
-            }
-            </div>
+                <p className='mt-4 '>I cannot stress this enough: never force customers to create an account or register prior to completing checkout. This creates an added step (or steps) for customers, slows them down, and ultimately causes them to reconsider whether they want to proceed. Always offer guest checkout options so that customers are not slowed down, and have the option to proceed by just providing their email address.</p>
+                <p>The checkout page gives customers the opportunity to enter payment details and complete their order. The checkout process will collect: <br />
+                    01. a customers shipping details <br />
+                    02. billing details <br />
+                    03. shipping method and payment method <br />
+                    04. give an option to submit the order.
+                </p>
+                <div className="checkout-container">
+                    {
+                        pictures.map(picture => <PictureDetail
+                            key={picture.id}
+                            picture={picture}
+                        >
+                        </PictureDetail>)
+                    }
+                </div>
             </div>
         </div>
     );

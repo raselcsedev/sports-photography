@@ -4,11 +4,13 @@
     font-family: Georgia, 'Times New Roman', Times, serif;
 
 }
-.about h1{
-    margin-top: 100px;
-    color: rgba(25, 32, 69, 0.801);
+.image-container{
+    width: 250px;
+    height: 200px;
+    margin-right: 20px;
+    border-radius: 10px;
 }
-.contact-us{
+.about-us{
     display: flex;
     gap: 20px;
     align-items: center;
@@ -21,7 +23,7 @@
 @media (max-width:650px) {
     
     
-    .contact-us{
+    .about-us{
         gap: 25px;
         font-size: small;
     }
