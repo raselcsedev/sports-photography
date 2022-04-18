@@ -24,11 +24,10 @@ const Register = () => {
     }
     const handleRegister = event => {
         event.preventDefault();
-        const name = event.target.name.value;
         const email = event.target.email.value;
         const password = event.target.password.value;
 
-        createUserWithEmailAndPassword(name, email, password);
+        createUserWithEmailAndPassword(email, password);
 
 
     }
@@ -38,8 +37,9 @@ const Register = () => {
             <h2 className='text-success text-center mt-2'>Please Register</h2>
 
             <Form onSubmit={handleRegister}>
-                <Form.Group className="mb-3" controlId="formBasicName">
-                    <Form.Control type="name" name='name' placeholder="Enter your name" required />
+
+            <Form.Group className="mb-3" controlId="formBasicEmail">
+                    <Form.Control type="input" placeholder="Enter your name" required />
                 </Form.Group>
 
                 <Form.Group className="mb-3" controlId="formBasicEmail">

@@ -1,6 +1,7 @@
 import React from 'react';
 import PictureDetail from './PictureDetail/PictureDetail';
 import './CheckOut.css'
+import Footer from '../Shared/Footer/Footer';
 
 const CheckOut = () => {
     const pictures = [
@@ -27,6 +28,7 @@ const CheckOut = () => {
         }
     ];
     return (
+        <>
         <div id='checkout' className='container'>
             <div className="row">
                 <p className='mt-4 '>I cannot stress this enough: never force customers to create an account or register prior to completing checkout. This creates an added step (or steps) for customers, slows them down, and ultimately causes them to reconsider whether they want to proceed. Always offer guest checkout options so that customers are not slowed down, and have the option to proceed by just providing their email address.</p>
@@ -47,6 +49,8 @@ const CheckOut = () => {
                 </div>
             </div>
         </div>
+        <Footer></Footer>
+        </>
     );
 };
 

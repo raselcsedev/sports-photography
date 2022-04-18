@@ -1,8 +1,10 @@
 import React from 'react';
+import Footer from '../Shared/Footer/Footer';
 import './Blogs.css'
 
 const Blogs = () => {
     return (
+        <>
         <section className='blogs'>
             <div>
                 <h1>Difference between Authentication and Authorization - </h1>
@@ -46,7 +48,10 @@ const Blogs = () => {
                     08. Cloud Messaging.
                 </p>
             </div>
+            
         </section>
+        <Footer></Footer>
+        </>
     );
 };
 

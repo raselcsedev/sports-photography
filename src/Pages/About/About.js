@@ -1,6 +1,7 @@
 import React from 'react';
 import './About.css'
 import rasel from '../../images/about/rasel.png'
+import Footer from '../Shared/Footer/Footer';
 
 const About = () => {
     return (
@@ -15,9 +16,10 @@ const About = () => {
                     <h3 className='text-success'>Get in Touch</h3>
                     <p className='mb-0'>Email:<small className='text-primary mb-0'>raselcse.dev@gmail.com</small></p>
                     <p className='mt-0'><small>Extension Pallabi, <br /> Dhaka-1216</small></p>
-                    {/* <button className='btn btn-success'>resume</button> */}
+
                 </div>
             </div>
+            <Footer></Footer>
         </div>
     );
 };
