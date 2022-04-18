@@ -1,7 +1,7 @@
 import React from 'react';
-import PictureDetail from './PictureDetail/PictureDetail';
 import './CheckOut.css'
-import Footer from '../Shared/Footer/Footer';
+import PictureDetail from '../PictureDetail/PictureDetail';
+import Footer from '../../Shared/Footer/Footer';
 
 const CheckOut = () => {
     const pictures = [

@@ -1,0 +1,11 @@
+.input-field{
+    justify-content: center;
+    align-items: center;
+
+}
+.subscribe-button button{
+    border-radius: 20px;
+    padding: 5px 85px;
+    margin-top: 20px;
+    margin-bottom: 20px;
+}

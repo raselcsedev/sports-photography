@@ -7,10 +7,10 @@ import Header from './Pages/Shared/Header/Header';
 import Login from './Pages/Login/Login/Login';
 import Register from './Pages/Login/Register/Register';
 import RequireAuth from './Pages/Login/RequireAuth/RequireAuth';
-import CheckOut from './Pages/CheckOut/CheckOut';
 import Blogs from './Pages/Blogs/Blogs';
 import NotFound from './Pages/NotFound/NotFound';
 import Albums from './Pages/Home/Albums/Albums';
+import CheckOut from './Pages/CheckOut/CheckOut/CheckOut';
 
 function App() {
   return (

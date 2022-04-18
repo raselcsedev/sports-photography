@@ -14,7 +14,6 @@ const Album = ({album}) => {
             <Link to='/checkout' >
                 <button className='btn btn-success '>Proceed CheckOut</button>
             </Link>
-            {/* <button onClick={()=> navigateToServiceDetail(id)} className='btn btn-success px-5'>Details</button> */}
             </div>
         </div>
     );
